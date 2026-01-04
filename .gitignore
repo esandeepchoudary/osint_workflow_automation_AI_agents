@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+#enviroenment variables files
+.env
+
+#execution output files
+bbot_scans/
+breach_check_scan_results/
+OSINT_Files/
