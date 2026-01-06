@@ -43,7 +43,7 @@ def extract_emails_for_breach_check(tool_context: ToolContext, path: str):
     return set(emails)
 
 root_agent = Agent(
-    model=LiteLlm(model="groq/openai/gpt-oss-120b", timeout = 10000, api_key=os.getenv('GROQ_API_KEY')),
+    model=LiteLlm(model=os.getenv('AI_MODEL'), timeout = 10000, api_key=os.getenv('GROQ_API_KEY')),
     name="root_agent",
     description=("An agent that orchestrates multiple OSINT agents to perform comprehensive reconnaissance on a given target."),
     instruction=("""

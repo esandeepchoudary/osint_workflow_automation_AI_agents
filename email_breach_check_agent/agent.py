@@ -73,7 +73,7 @@ def invoke_breachcheck(tool_context: ToolContext, email: list):
 
 root_agent = Agent(
     # os.environ['GROQ_API_KEY']
-    model=LiteLlm(model="groq/openai/gpt-oss-120b", timeout=10000, api_key=os.getenv('GROQ_API_KEY')),
+    model=LiteLlm(model=os.getenv('AI_MODEL'), timeout=10000, api_key=os.getenv('GROQ_API_KEY')),
     # model='gemini-2.5-pro',
     name="breachcheck_agent",
     description=("An agent that checks a list of email addresses for known breaches using the leakcheck.io public API."),

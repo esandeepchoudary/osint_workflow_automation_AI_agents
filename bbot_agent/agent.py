@@ -60,7 +60,7 @@ def run_bbot(tool_context: ToolContext, domain_list: list):
     
 root_agent = Agent(
     # os.environ['GROQ_API_KEY']
-    model=LiteLlm(model="groq/openai/gpt-oss-120b", timeout = 10000, api_key=os.getenv('GROQ_API_KEY')),
+    model=LiteLlm(model=os.getenv('AI_MODEL'), timeout = 10000, api_key=os.getenv('GROQ_API_KEY')),
     # model='gemini-2.5-pro',
     name="bbot_agent",
     description=("An agent that runs the bbot tool to perform OSINT on a list of domains."),

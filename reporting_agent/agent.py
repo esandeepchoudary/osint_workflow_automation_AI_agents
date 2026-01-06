@@ -82,7 +82,7 @@ def bbot_reporting(file_path: str):
 
 def executive_summary_llm(content: str):
     response = completion(
-        model="groq/openai/gpt-oss-120b", 
+        model=os.getenv('AI_MODEL'), 
         messages=[
            {
             "role": "system",
