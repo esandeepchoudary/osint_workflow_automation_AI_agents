@@ -16,3 +16,6 @@ wheels/
 bbot_scans/
 breach_check_scan_results/
 OSINT_Files/
+
+#adk output folders
+.adk/
