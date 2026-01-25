@@ -58,6 +58,7 @@ The system operates through a central **Orchestrator Agent** that coordinates th
     SUDO privileges are required to install some dependencies. Enter your sudo password when prompted.
     ```bash
     source .venv/bin/activate
+    uv add aiohttp
     bbot --install-all-deps
     ```
 
