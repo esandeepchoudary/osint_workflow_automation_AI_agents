@@ -53,6 +53,12 @@ The system operates through a central **Orchestrator Agent** that coordinates th
     whois_api="YOUR_WHOIS_XML_API_KEY"
     GROQ_API_KEY="YOUR_GROQ_API_KEY"
     AI_MODEL="groq/openai/gpt-oss-120b" # or your preferred model supported by LiteLLM
+
+4.  **Install all dependencies required by BBOT:**
+    SUDO is required to install some dependencies.
+    ```bash
+    source .venv/bin/activate
+    bbot --install-all-deps
     ```
 
 ## Usage
